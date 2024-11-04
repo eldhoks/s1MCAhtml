@@ -1,0 +1,6 @@
+<html>
+  <frameset rows="60%,40%">
+                   <frame scr="eleimage.html">
+                   <frame src="elephantdes.html">
+</frameset>
+</html>
