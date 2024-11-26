@@ -1,0 +1,34 @@
+mouse.html
+<html>
+<head>
+  <title>Mouseover Example</title>
+<style>
+#demo{
+      width:200px;
+</style>
+</head>
+<body>
+ <marquee behavior="alternate" direction="left" scrollamount="10">
+<h1 id="demo" onmouseover="mouseover()" onmouseout="mouseout()">Mouse On Me</h1>
+ </marquee>
+
+  <script>
+    function mouseover() {
+
+      document.getElementById("demo").innerHTML = "Good Evening"
+      document.getElementById("demo").style.color = "red";
+      document.getElementById("demo").style.backgroundColor = "black";
+      document.body.style.backgroundColor = "green";
+      
+    }
+
+    function mouseout() {
+
+       document.getElementById("demo").innerHTML = "Mouse On Me";
+      document.getElementById("demo").style.color = "black";
+      document.getElementById("demo").style.backgroundColor = "red";
+      document.body.style.backgroundColor = "yellow";
+    }
+  </script>
+</body>
+</html>
